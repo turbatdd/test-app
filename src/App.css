@@ -1,0 +1,90 @@
+body {
+  align-items: center;
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-color: whitesmoke;
+  font-size: 12px;
+}
+
+.my-custom-select {
+  position: absolute;
+  top: 100px;
+  left: calc(50% - 200px);
+  width: 400px;
+  height: 200px;
+}
+
+.my-select {
+  position: relative;
+  width: auto;
+  height: 30px;
+  border: 1px solid black;
+  display: flex;
+  border-radius: 5px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btns {
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+}
+
+.btn {
+  margin: 5px;
+  /* background-color: gray; */
+}
+.my-select-input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+}
+
+.my-select-input:focus {
+  border: none;
+  outline: none;
+}
+
+.my-select:focus-within {
+  border: 1px solid skyblue;
+  border-radius: 5px;
+}
+
+.selected-list {
+  display: flex;
+}
+
+.selected-item {
+  padding: 2px 5px 2px 5px;
+  margin-left: 5px;
+  background-color: gray;
+  border-radius: 2px;
+  width: max-content;
+}
+.data-list {
+  border: 1px solid gray;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.data-list > ul {
+  padding: 0;
+  margin: 0;
+}
+.data-list > ul li {
+  list-style: none;
+}
+
+.data-list > ul li:hover {
+  background-color: skyblue;
+}
